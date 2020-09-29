@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": "https://www.midwest-tropical.com",
+    "paths": {
+      "~/*": ["src/*"]
+    }
+  }
+}

@@ -1,49 +1,60 @@
-# Gatsby v2 WordPress Starter
+<div align="center" style="margin-bottom: 20px;">
+<img src="https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/raw/master/docs/assets/gatsby-wapuus.png" alt="Wapuu hugging a ball with the Gatsby logo on it" />
+</div>
 
-This starter is forked from the
-[gatsby-starter-netlify-cms](https://github.com/netlify-templates/gatsby-starter-netlify-cms)
-and modified to use WordPress instead of netlify-cms, using the [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress) plugin as the data connector.
+<p align="center">
+  <a href="https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Gatsby and gatsby-source-wordpress-experimental are released under the MIT license." />
+  </a>
+  <a href="https://www.npmjs.org/package/gatsby-source-wordpress-experimental">
+    <img src="https://img.shields.io/npm/v/gatsby-source-wordpress-experimental.svg" alt="Current npm package version." />
+  </a>
+  <a href="https://npmcharts.com/compare/gatsby-source-wordpress-experimental?minimal=true">
+    <img src="https://img.shields.io/npm/dm/gatsby-source-wordpress-experimental.svg" alt="Downloads per month on npm." />
+  </a>
+  <a href="https://npmcharts.com/compare/gatsby-source-wordpress-experimental?minimal=true">
+    <img src="https://img.shields.io/npm/dt/gatsby-source-wordpress-experimental.svg" alt="Total downloads on npm." />
+  </a>
+  <a href="https://gatsbyjs.org/contributing/how-to-contribute/">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs welcome!" />
+  </a>
+  <a href="https://twitter.com/intent/follow?screen_name=gatsbyjs">
+    <img src="https://img.shields.io/twitter/follow/gatsbyjs.svg?label=Follow%20@gatsbyjs" alt="Follow @gatsbyjs" />
+  </a>
+</p>
 
-Demo: https://gatsby-starter-wordpress.netlify.com/
+# gatsby-source-wordpress@v4 BETA
 
-## Use It Now
+This plugin is the official recommended way to use WordPress with Gatsby. We're currently publishing on a separate package to make migrating from `gatsby-source-wordpress@v3` easier. If you're coming from `v3` ​this allows you to activate the new version of the plugin alongside `gatsby-source-wordpress` and migrate your codebase one piece at a time :star:
 
-    gatsby new NAME https://github.com/GatsbyCentral/gatsby-starter-wordpress
+## Overview :sun_with_face:
 
-* Edit `gatsby-config.js`, change `baseUrl`
-  - Make sure you have at least 1 post and 1 page on your WordPress site
-  - Make sure at least 1 post has at least 1 tag
-* Ensure the permalink structure in your WordPress installation is set to `Post Name` instead of the deafult `Plain`, or else the `gatsby-source-wordpress` plugin won't be able to communicate with WordPress
-* Rejoice
-  - For more information on the source plugin, check out the [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress) repository page
-  - File any [issues here](https://github.com/GatsbyCentral/gatsby-starter-wordpress/issues)
+This plugin works by merging the [WPGraphQL schema & data](https://docs.wpgraphql.com/guides/about-wpgraphql/) with the [Gatsby schema & Node model](https://www.gatsbyjs.org/docs/node-model/) which allows us to efficiently cache WP data in Gatsby. What this means is that incremental builds, fast builds, and previews work beautifully! :nail_care:
 
-### Known Limitations
+Developer & Content Creator experience are some of our main focuses with this integration. Please send us your feedback!
 
-* This is based on the [netlify starter](https://github.com/netlify-templates/gatsby-starter-netlify-cms) which uses [bulma](https://bulma.io). This adds 150KB to every built page.
-* Your WordPress site must have at least 1 post with 1 tag, or the starter will crash
-* Nested pages / categories will not render with nested pages
-  - A WordPress page like `/about/team/` will render on Gatsby as `/team/`
-  - Likewise for categories
-  - Discussion here https://github.com/GatsbyCentral/gatsby-starter-wordpress/issues/24
+:gear: :mag_right: :eyes: :point_right: :pencil2: :page_facing_up:
 
-## CSS Processing
+# Docs :book:
 
-This plugin uses [gatsby-plugin-purgecss](https://www.gatsbyjs.org/packages/gatsby-plugin-purgecss/) and [bulma](https://bulma.io/). The bulma build would otherwise be ~170K which adds 170K to each of your built HTML pages. However, with purgecss this is reduced 90%.
+- :woman_singer: [Why use this plugin?](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/blob/master/docs/why-use-this-plugin.md)
+- :runner: [Installation & Getting started](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/blob/master/docs/getting-started.md)
+- :school: [Tutorials](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/blob/master/docs/tutorials/index.md)
+- :feet: [Features](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/blob/master/docs/features/index.md)
+- :electric_plug: [Plugin options](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/blob/master/docs/plugin-options.md)
+- :boat: [Migrating from other WP source plugins](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/blob/master/docs/migrating-from-other-wp-source-plugins.md)
+- :computer: [Using Data](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/blob/master/docs/using-data.md)
+- :house: [Hosting WordPress](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/blob/master/docs/hosting.md)
+- :athletic_shoe: [Themes, Starters, and Examples](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/blob/master/docs/themes-starters-examples.md)
+- :medal_sports: [Usage with popular WPGraphQL extensions](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/blob/master/docs/usage-with-popular-wp-graphql-extensions.md)
+- :hammer_and_wrench: [Debugging and troubleshooting](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/blob/master/docs/debugging-and-troubleshooting.md)
+- :national_park: [Community and Support](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/blob/master/docs/community-and-support.md)
 
-## WordPress Setup
+## Relevant Links :link:
 
-Check the [gatsby-source-wordpress](https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-source-wordpress) plugin for more information. If you want to copy the demo content, you can grab the [WordPress XML export here](https://wpdemo.gatsbycentral.com/gatsbystarterwordpress.WordPress.2019-09-12.xml) and import it into your WordPress site as a starting point.
-
-## Support
-
-Please post support questions on StackOverflow or other similar sites. Please only post issues here if you have a bug to report with a reproduction. Unfortunately we're not able to provide support here.
-
-## Contributors
-
-This starter was forked from the netlify starter by the
-[GatsbyCentral](https://www.gatsbycentral.com/) crew. Additional contributions
-were gratefully received from the following folks:
-
-* https://github.com/tomByrer
-* https://github.com/dajocarter
+- [Changelog](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/blob/master/CHANGELOG.md)
+- [License](https://github.com/gatsbyjs/gatsby-source-wordpress-experimental/blob/master/LICENSE)
+- [WPGatsby](https://github.com/gatsbyjs/wp-gatsby)
+- [WPGraphQL](https://github.com/wp-graphql/wp-graphql)
+- [Gatsby](https://www.gatsbyjs.org/)
+- [WordPress](https://wordpress.org/)
