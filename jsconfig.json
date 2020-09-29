@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "https://www.midwest-tropical.com",
+    "baseUrl": "https://www.midwest-tropical.com/GatsbyWP/",
     "paths": {
       "~/*": ["src/*"]
     }
